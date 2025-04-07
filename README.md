@@ -10,7 +10,7 @@ For the final project, you are provided 6 CSV files, each containing an undirect
 | musae_ENGB_edges.csv          | 35324                        |
 | log_normal_100.csv            | 2671                         |  
 
-You can choose to do either matching or correlation clustering. 
+You can choose to work on matching or correlation clustering. 
 
 ## Matching
 
@@ -27,7 +27,7 @@ Your output should be a CSV file listing all of the matched edges, 1 on each lin
 1,2  
 4,3  
 
-## Clustering
+## Correlation Clustering
 
 ### Input format
 Each input file consists of multiple lines, where each line contains 2 numbers that denote an undirected edge. For example, the input below is a graph with 3 edges.  
