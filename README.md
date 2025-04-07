@@ -1,5 +1,4 @@
 # Large Scale Data Processing: Final Project
-## Graph matching
 For the final project, you are provided 6 CSV files, each containing an undirected graph, which can be found [here](https://drive.google.com/file/d/1khb-PXodUl82htpyWLMGGNrx-IzC55w8/view?usp=sharing). The files are as follows:  
 
 |           File name           |        Number of edges       |
@@ -10,6 +9,10 @@ For the final project, you are provided 6 CSV files, each containing an undirect
 | soc-pokec-relationships.csv   | 22301964                     |
 | musae_ENGB_edges.csv          | 35324                        |
 | log_normal_100.csv            | 2671                         |  
+
+You can choose to do either matching or correlation clustering. 
+
+## Matching
 
 Your goal is to compute a matching as large as possible for each graph. 
 
@@ -23,6 +26,22 @@ Each input file consists of multiple lines, where each line contains 2 numbers t
 Your output should be a CSV file listing all of the matched edges, 1 on each line. For example, the ouput below is a 2-edge matching of the above input graph. Note that `3,4` and `4,3` are the same since the graph is undirected.  
 1,2  
 4,3  
+
+## Clustering
+
+### Input format
+Each input file consists of multiple lines, where each line contains 2 numbers that denote an undirected edge. For example, the input below is a graph with 3 edges.  
+1,2  
+3,2  
+3,4  
+
+### Output format
+Your output should be a CSV file describing all of the clusters. The number of lines should be equal to the number of vertices. Each line consists two numbers, the vertex ID and the cluster ID.
+
+For example, the output below denotes vertex 1 and vertex 3 are in one cluster and vertex 2 forms a singleton cluster.
+1,100
+2,200
+3,100
 
 ### No template is provided
 For the final project, you will need to write everything from scratch. Feel free to consult previous projects for ideas on structuring your code. That being said, you are provided a verifier that can confirm whether or not your output is a matching. As usual, you'll need to compile it with
