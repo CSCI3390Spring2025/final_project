@@ -75,26 +75,27 @@ spark-submit --master "local[*]" --class "final_project.clustering_verifier" tar
 ```
 
 ## Deliverables
-* The output file (matching) for each test case.
-  * For naming conventions, if the input file is `XXX.csv`, please name the output file `XXX_matching.csv`.
+* The output file for each test case.
+  * For naming conventions, if the input file is `XXX.csv`, please name the output file `XXX_solution.csv`.
   * You'll need to compress the output files into a single ZIP or TAR file before pushing to GitHub. If they're still too large, you can upload the files to Google Drive and include the sharing link in your report.
 * The code you've applied to produce the matchings.
-  * You should add your source code to the same directory as `verifier.scala` and push it to your repository.
+  * You should add your source code to the same directory as the verifiers and push it to your repository.
 * A project report that includes the following:
-  * A table containing the size of the matching you obtained for each test case. The sizes must correspond to the matchings in your output files.
+  * A table containing the objective of the solution (i.e. the size of matching or the number of disagreements of clustering) you obtained for each test case. The objectives must correspond to the matchings or the clusterings in your output files.
   * An estimate of the amount of computation used for each test case. For example, "the program runs for 15 minutes on a 2x4 N1 core CPU in GCP." If you happen to be executing mulitple algorithms on a test case, report the total running time.
-  * Description(s) of your approach(es) for obtaining the matchings. It is possible to use different approaches for different cases. Please describe each of them as well as your general strategy if you were to receive a new test case.
+  * Description(s) of your approach(es) for obtaining the matching or the clsutering. It is possible to use different approaches for different cases. Please describe each of them as well as your general strategy if you were to receive a new test case. It is important that your approach can scale to larger cases if there are more machines.
   * Discussion about the advantages of your algorithm(s). For example, does it guarantee a constraint on the number of shuffling rounds (say `O(log log n)` rounds)? Does it give you an approximation guarantee on the quality of the matching? If your algorithm has such a guarantee, please provide proofs or scholarly references as to why they hold in your report.
-* A 10-minute presentation during class time on 5/2 (Thu).
+* A 10-minute presentation during class time on 4/29 (Tue) and 5/1 (Thu).
   * Note that the presentation date is before the final project submission deadline. This means that you could still be working on the project when you present. You may present the approaches you're currently trying. You can also present a preliminary result, like the matchings you have at the moment.
 
 ## Grading policy
-* Quality of matchings (40%)
-  * For each test case, you'll receive at least 70% of full credit if your matching size is at least half of the best answer in the class.
-  * **You will receive a 0 for any case where the verifier does not confirm that your output is a matching.** Please do not upload any output files that do not pass the verifier.
+* Quality of solutions (40%)
+  * For each test case, you'll receive at least 70% of full credit if your matching size is at 70% the best answer in the class or if your clustering size is at most 130% of the best in the class.
+  * **You will receive a 0 for any case where the verifier does not confirm that your output is a correct.** Please do not upload any output files that do not pass the verifier.
 * Project report (35%)
   * Your report grade will be evaluated using the following criteria:
     * Discussion of the merits of your algorithms such as the theoretical merits (i.e. if you can show your algorithm has certain guarantee).
+    * The scalability of your approach
     * Depth of technicality
     * Novelty
     * Completeness
@@ -108,7 +109,7 @@ Delete your project's current **README.md** file (the one you're reading right n
 
 ## You must do the following to receive full credit:
 1. Create your report in the ``README.md`` and push it to your repo.
-2. In the report, you must include your (and any partner's) full name in addition to any collaborators.
+2. In the report, you must include your teammates' full name in addition to any collaborators.
 3. Submit a link to your repo in the Canvas assignment.
 
 ## Early submission bonus
