@@ -10,6 +10,7 @@ For the final project, you are provided 6 CSV files, each containing an undirect
 | musae_ENGB_edges.csv          | 35324                        |
 | log_normal_100.csv            | 2671                         |  
 
+
 You can choose to work on matching or correlation clustering. 
 
 ## Matching
@@ -26,15 +27,6 @@ Each input file consists of multiple lines, where each line contains 2 numbers t
 Your output should be a CSV file listing all of the matched edges, 1 on each line. For example, the ouput below is a 2-edge matching of the above input graph. Note that `3,4` and `4,3` are the same since the graph is undirected.  
 1,2  
 4,3  
-
-The matching verifier accepts 2 file paths as arguments, the first being the path to the file containing the initial graph and the second being the path to the file containing the matching. It can be ran locally with the following command (keep in mind that your file paths may be different):
-```
-// Linux
-spark-submit --master local[*] --class final_project.matching_verifier target/scala-2.12/project_3_2.12-1.0.jar /data/log_normal_100.csv data/log_normal_100_matching.csv
-
-// Unix
-spark-submit --master "local[*]" --class "final_project.matching_verifier" target/scala-2.12/project_3_2.12-1.0.jar data/log_normal_100.csv data/log_normal_100_matching.csv
-```
 
 ## Correlation Clustering
 
@@ -53,22 +45,34 @@ For example, the output below denotes vertex 1, vertex 3, and vertex 4 are in on
 4,100
 3,100
 
-The clustering verifier accepts 2 file paths as arguments, the first being the path to the file containing the initial graph and the second being the path to the file describing the clustering. It can be ran locally with the following command (keep in mind that your file paths may be different):
-```
-// Linux
-spark-submit --master local[*] --class final_project.clustering_verifier target/scala-2.12/project_3_2.12-1.0.jar /data/log_normal_100.csv data/log_normal_100_matching.csv
-
-// Unix
-spark-submit --master "local[*]" --class "final_project.clustering_verifier" target/scala-2.12/project_3_2.12-1.0.jar data/log_normal_100.csv data/log_normal_100_matching.csv
-```
-
 
 ## No template is provided
-For the final project, you will need to write everything from scratch. Feel free to consult previous projects for ideas on structuring your code. That being said, you are provided a verifier that can confirm whether or not your output is a matching. As usual, you'll need to compile it with
+For the final project, you will need to write everything from scratch. Feel free to consult previous projects for ideas on structuring your code. That being said, you are provided a verifier that can confirm whether or not your output is a matching or a clustering. As usual, you'll need to compile it with
 ```
 sbt clean package
 ```  
+## Matching
 
+The matching verifier accepts 2 file paths as arguments, the first being the path to the file containing the initial graph and the second being the path to the file containing the matching. It can be ran locally with the following command (keep in mind that your file paths may be different):
+```
+// Linux
+spark-submit --master local[*] --class final_project.matching_verifier target/scala-2.12/project_3_2.12-1.0.jar /data/log_normal_100.csv data/log_normal_100_matching.csv
+
+// Unix
+spark-submit --master "local[*]" --class "final_project.matching_verifier" target/scala-2.12/project_3_2.12-1.0.jar data/log_normal_100.csv data/log_normal_100_matching.csv
+```
+
+## Correlation Clustering
+
+The clustering verifier accepts 2 file paths as arguments, the first being the path to the file containing the initial graph and the second being the path to the file describing the clustering. It can be ran locally with the following command (keep in mind that your file paths may be different):
+```
+// Linux
+spark-submit --master local[*] --class final_project.clustering_verifier target/scala-2.12/project_3_2.12-1.0.jar /data/small_test.csv data/small_test_clustering.csv
+
+// Unix
+spark-submit --master "local[*]" --class "final_project.clustering_verifier" target/scala-2.12/project_3_2.12-1.0.jar data/small_test.csv data/small_test_clustering.csv
+
+```
 
 ## Deliverables
 * The output file (matching) for each test case.
@@ -108,7 +112,7 @@ Delete your project's current **README.md** file (the one you're reading right n
 3. Submit a link to your repo in the Canvas assignment.
 
 ## Early submission bonus
-The deadline of the final project is on 5/4 (Friday) 11:59PM. 
-**If you submit by 5/3 (Thu) 11:59PM, you will get 5% boost on the final project grade.**
-The submission time is calculated from the last commit in the Git log.
-**No extension beyond 5/4 11:59PM will be granted, even if you have unused late days.**
+The deadline of the final project is on 5/4 (Sunday) 11:59PM. 
+**If you submit by 5/2 (Friday) 11:59PM, you will get 5% boost on the final project grade.**  
+The submission time is calculated from the last commit in the Git log.  
+**No extension beyond 5/4 11:59PM will be granted, even if you have unused late days.**  
