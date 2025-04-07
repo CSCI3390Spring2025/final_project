@@ -38,10 +38,11 @@ Each input file consists of multiple lines, where each line contains 2 numbers t
 ### Output format
 Your output should be a CSV file describing all of the clusters. The number of lines should be equal to the number of vertices. Each line consists two numbers, the vertex ID and the cluster ID.
 
-For example, the output below denotes vertex 1 and vertex 3 are in one cluster and vertex 2 forms a singleton cluster.  
+For example, the output below denotes vertex 1, vertex 3, and vertex 4 are in one cluster and vertex 2 forms a singleton cluster.  The clustering has a 4 disagreements.
 1,100  
 2,200  
-3,100  
+4,100
+3,100
 
 ### No template is provided
 For the final project, you will need to write everything from scratch. Feel free to consult previous projects for ideas on structuring your code. That being said, you are provided a verifier that can confirm whether or not your output is a matching. As usual, you'll need to compile it with
