@@ -114,8 +114,8 @@ Delete your project's current **README.md** file (the one you're reading right n
 2. In the report, you must include your teammates' full name in addition to any collaborators.
 3. Submit a link to your repo in the Canvas assignment.
 
-## Early submission bonus
-The deadline of the final project is on 5/4 (Sunday) 11:59PM.  
-**If you submit by 5/2 (Friday) 11:59PM, you will get 5% boost on the final project grade.**  
-The submission time is calculated from the last commit in the Git log.  
-**No extension beyond 5/4 11:59PM will be granted, even if you have unused late days.**  
+## Deadline and Early submission bonus
+1. The deadline of the final project is on 5/4 (Sunday) 11:59PM.  
+2. **If you submit by 5/2 (Friday) 11:59PM, you will get 5% boost on the final project grade.**  
+3. The submission time is calculated from the last commit in the Git log.  
+4. **No extension beyond 5/4 11:59PM will be granted, even if you have unused late days.**  
