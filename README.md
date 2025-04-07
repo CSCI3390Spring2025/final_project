@@ -11,7 +11,7 @@ For the final project, you are provided 6 CSV files, each containing an undirect
 | log_normal_100.csv            | 2671                         |  
 
 
-You can choose to work on matching or correlation clustering. 
+You can choose to work on **matching** or **correlation clustering**. 
 
 ## Matching
 
@@ -29,6 +29,8 @@ Your output should be a CSV file listing all of the matched edges, 1 on each lin
 4,3  
 
 ## Correlation Clustering
+
+Your goal is to compute a clustering that has disagreements as small as possible for each graph. 
 
 ### Input format
 Each input file consists of multiple lines, where each line contains 2 numbers that denote an undirected edge. For example, the input below is a graph with 3 edges.  
@@ -113,7 +115,7 @@ Delete your project's current **README.md** file (the one you're reading right n
 3. Submit a link to your repo in the Canvas assignment.
 
 ## Early submission bonus
-The deadline of the final project is on 5/4 (Sunday) 11:59PM. 
+The deadline of the final project is on 5/4 (Sunday) 11:59PM.  
 **If you submit by 5/2 (Friday) 11:59PM, you will get 5% boost on the final project grade.**  
 The submission time is calculated from the last commit in the Git log.  
 **No extension beyond 5/4 11:59PM will be granted, even if you have unused late days.**  
