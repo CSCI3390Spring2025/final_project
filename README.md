@@ -33,7 +33,7 @@ Your output should be a CSV file listing all of the matched edges, 1 on each lin
 Your goal is to compute a clustering that has disagreements as small as possible for each graph. 
 
 ### Input format
-Each input file consists of multiple lines, where each line contains 2 numbers that denote an undirected edge. For example, the input below is a graph with 3 (positive) edges. 
+Each input file consists of multiple lines, where each line contains 2 numbers that denote an undirected edge. For example, the input below is a graph with 3 (positive) edges.  
 1,2  
 3,2  
 3,4  
